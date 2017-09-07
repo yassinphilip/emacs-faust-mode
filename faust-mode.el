@@ -39,8 +39,6 @@
 
 (require 'smie)
 
-(defvar ac-sources)
-
 (defconst faust-keywords-statements
   '("process" "with" "case" "seq" "par" "sum" "prod" "include" "import" "component" "library" "environment" "declare" "define" "undef" "error" "pragma" "ident" "if" "def" "else" "elif" "endif" "line" "warning"))
 
@@ -183,12 +181,6 @@ well as indentation rules. "
    comment-start "//"
    comment-end ""
    font-lock-defaults '(faust-mode-font-lock-keywords))
-
-  (if (boundp 'ac-sources)
-      (progn
-        (add-to-list 'ac-modes 'faustine-mode)
-        (add-to-list 'ac-sources 'faustine-mode-ac-source))
-    (message "You really should install and use auto-complete"))
 
   (smie-setup nil #'ignore)
 
