@@ -37,6 +37,7 @@
 
 ;;; Code:
 
+
 (require 'smie)
 
 (defconst faust-keywords-statements
