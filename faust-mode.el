@@ -30,7 +30,7 @@
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; FAUST Mode (very simple syntax colorizing!)
-;; by rukano
+;; by rukano, 
 ;; based on the tutorial on:
 ;; http://xahlee.org/emacs/elisp_syntax_coloring.html
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -135,9 +135,6 @@
    faust-keywords-lib-synth
    faust-keywords-lib-vaeffect)
   "All the Faust library function keywords.")
-
-(defvar faust-mode-ac-source
-  '((candidates . faust-keywords-lib)))
 
 (defvar faust-regexp-keywords-function (regexp-opt faust-keywords-functions 'words))
 (defvar faust-regexp-keywords-statement (regexp-opt faust-keywords-statements 'words))
