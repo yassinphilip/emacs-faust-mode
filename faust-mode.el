@@ -12,6 +12,7 @@
 ;; URL: https://github.com/rukano/emacs-faust-mode
 ;; License: GPLv3
 ;; MELPA: yes
+;; MELPA-stable: yes
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -28,12 +29,31 @@
 
 ;;; Commentary:
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; FAUST Mode (very simple syntax colorizing!)
-;; by rukano, 
-;; based on the tutorial on:
-;; http://xahlee.org/emacs/elisp_syntax_coloring.html
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; ## Installation
+
+;; ### Easy
+
+;; - Install it from [MELPA](https://melpa.org).
+
+;; ### Hard
+
+;; - Copy/clone this repository in `load-path`
+;; - Add
+;; ```elisp
+;; (require 'faust-mode)
+;; ```
+;; to your init file
+
+;; ### Faust
+
+;; Oh, and of course install [the latest
+;; Faust](http://faust.grame.fr/download/) and ensure it's in the
+;; PATH.
+
+;; ### Faustine
+
+;; Based on faust-mode, [Faustine](https://bitbucket.org/yassinphilip/faustine) goes even further into turning Emacs
+;; into a full-fledged Faust IDE.
 
 ;;; Code:
 
@@ -173,7 +193,7 @@
 [Faust](http://faust.grame.fr) (Functional AUdio STream) files.
 
 Syntax highlighting of *all* the Faust commands and operators, as
-well as indentation rules. "
+well as indentation rules."
 
   (setq
    comment-start "//"
