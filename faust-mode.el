@@ -29,6 +29,12 @@
 
 ;;; Commentary:
 
+;; ## Features
+
+;; - Syntax highlighting of *all* the Faust commands and operators
+;; - Indentation rules
+;; - [Compatible](https://github.com/syl20bnr/spacemacs/tree/develop/layers/%2Blang/faust) with SpaceEmacs
+
 ;; ## Installation
 
 ;; ### Easy
@@ -52,8 +58,7 @@
 
 ;; ### Faustine
 
-;; Based on faust-mode, [Faustine](https://bitbucket.org/yassinphilip/faustine) goes even further into turning Emacs
-;; into a full-fledged Faust IDE.
+;; Based on faust-mode, [Faustine](https://bitbucket.org/yassinphilip/faustine) goes even further into turning Emacs into a full-fledged Faust IDE.
 
 ;;; Code:
 
